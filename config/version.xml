@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此页面是版本发布信息，保存必须使用UTF8格式保存-->
+<whatsnew>
+	<name>版本发布信息</name>
+	<Module>
+		<android>
+			<version>0.2.06</version>
+			<date>2013-12-30</date>
+			<url>http://iwsfs.ipeng.langma.cn/download/apk/ipeng_android_0.2.06.apk</url>
+			<size>8.7M</size>
+		</android>
+		<ios>
+			<version>0.2.05</version>
+			<date>2014-01-09</date>
+			<url>https://itunes.apple.com/cn/app/id541319705</url>
+			<size>17.8M</size>
+		</ios>
+	</Module>
+</whatsnew>
+

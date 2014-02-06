@@ -1,0 +1,114 @@
+.site-header
+{
+	width:100%;
+	height:300px;
+	background-color: #00a0e9;
+}
+#parallaxWapper
+{
+	width:1350px;
+	height:100%;
+	margin:0 auto;
+	background:url(../images/headers/demo_bg.jpg) no-repeat scroll;
+	overflow: hidden;
+	position: relative;
+}
+
+#parallaxWapper img
+{
+	position: absolute;
+}
+
+#new1
+{
+	top:42px;
+	left:32px;
+}
+#new2
+{
+	left:760px;
+	top:0px;
+}
+
+#new3
+{
+	left:924px;
+	top:0;
+}
+
+#about1
+{
+	top:42px;
+	left:32px;
+}
+
+#about2
+{
+	top:-20px;
+	left:756px;
+	z-index: 5;
+}
+
+#about3
+{
+	top:-20px;
+	left:706px;
+}
+
+#help1
+{
+	top:42px;
+	left:32px;
+}
+
+#help2
+{
+	width:220px;
+	height:220px;
+	border-radius:50%;
+	background-color:#f7dde8;
+	position: absolute;
+	overflow: hidden;
+	left:641px;
+	top:48px;
+}
+#help2 img
+{
+	top:27px;
+	left:-5px;
+}
+
+#help3
+{
+	width:220px;
+	height:220px;
+	border-radius:50%;
+	background-color:white;
+	position: absolute;
+	overflow: hidden;
+	left:870px;
+	top:48px;
+}
+
+#help3 img
+{
+	top:57px;
+	left:74px;	
+}
+#help4
+{
+	width:220px;
+	height:220px;
+	border-radius:50%;
+	background-color:#d3ecfd;
+	position: absolute;
+	overflow: hidden;
+	left:1098px;
+	top:48px;
+}
+
+#help4 img
+{
+	top:30px;
+	left:38px;
+}

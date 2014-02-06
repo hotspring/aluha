@@ -1,0 +1,431 @@
+
+.navbar {
+	border-radius:0px;
+	height:44px;
+	background-color:#005b85;
+	border-bottom:5px solid #005074;
+	margin-bottom:30px;
+}
+
+#navbar-wapper {
+	width:1350px;
+	margin:0 auto;
+}
+
+.navbar-brand {
+	height: 44px;
+	line-height:44px;
+}
+
+a {
+	
+}
+
+#container {
+	width:1350px;
+	min-width:900px;
+	margin:0 auto;
+	
+}
+
+.row .progress .progress-bar {
+	width:100%;
+	background-color: #e84694;
+}
+
+
+
+#chargeProgress ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	position: relative;
+	top:-30px;
+}
+#chargeProgress ul li{
+	display: inline-block;
+}
+
+.progress-point {
+	width:50px;
+	height: 60px;
+	position: relative;
+	text-align:center;
+}
+
+.progress-point p
+{
+	font-size:16px;
+	color:#858585;
+	text-align:center;
+}
+
+
+
+.progress-point span {
+	display: block;
+	margin:0 auto;
+	width:30px;
+	height:30px;
+	background-color:#e84694;
+	-webkit-border-radius:50% ;
+	-moz-border-radius:50% ;
+	-ms-border-radius:50% ;
+	-o-border-radius:50% ;
+	border-radius: 50%;
+}
+.curPoint span{
+	border:3px solid white;
+	background-color: #e84694; 
+	width:39px;
+	height:39px;
+	position: relative;
+	top: 4px;
+}
+#pageTitle H1 {
+	font-size:30px;
+	font-weight:400;
+	text-indent:36px;
+	color:#626262 ;
+	background:url("../img/charge_icon.png") no-repeat scroll;
+	margin:0;
+	margin-bottom:50px;
+}
+
+#pageone
+{
+	/*display: none;*/
+}
+
+.form-group h4
+{
+	font-size:18px;
+	color:#999;
+	margin:40px 0px;
+}
+
+#aluhaIdInput > div {
+	width:418px;
+	position: relative;
+	
+}
+/****************************************/
+/*aluha input*/
+/****************************************/
+
+
+#aluhaIdInput h5
+{
+	font-size:16px;
+	color:#999;
+	margin:2px;
+}
+
+#aluhaIdInput .input-icon, .IdSuccessTips, .IdFaildTips
+{
+	display: none;
+	color:#1fce6e;
+}
+
+
+.IdSuccessTips u
+{
+	text-decoration: none;
+	color:#1fce6e;
+}
+.IdFaildTips
+{
+	color:#e84694 !important;
+}
+
+
+.inputSuccess .form-control
+{
+	border-color:#1fce6e;
+	color:#1fce6e;
+}
+.inputSuccess .input-icon
+{
+	display: inline-block !important;
+	
+}
+.inputSuccess .IdSuccessTips
+{
+	display: block;
+}
+
+.inputFaild .form-control
+{
+	border-color:#e84694;
+	background-color: #e84694;
+	color:white;
+}
+.inputFaild .IdFaildTips
+{
+	display: block;
+}
+
+/**************************************/
+/*Charge Options*/
+/**************************************/
+#chargeOpt
+{
+	margin-top:100px;
+}
+#chargeOpt label
+{
+	color:#999;
+	font-size:16px;
+	line-height: 40px;
+}
+#chargeOpt .icons
+{
+	display: inline-block;
+	line-height: 40px
+}
+
+.radio.checked .second-icon
+{
+	color:#e84694;
+}
+
+/***************************************/
+#inputWarning
+{
+	display: none;
+}
+
+.form-group .btn
+{
+	margin:0 auto;
+	width:337px;
+	height:40px;
+	display: block;
+	letter-spacing: 2px;
+	font-size:16px;
+	font-weight: 600;
+	padding:0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	border-bottom:2px solid #2980B9;
+}
+
+#myModal .modal-body p
+{
+	font-size:16px;
+	color:#999;
+}
+#myModal .modal-body p u
+{
+	text-decoration: none;
+	color:#1fce6e;
+}
+
+/*page two*/
+#pagetwo
+{
+	margin-top:100px;
+	display: none;
+}
+#pagetwo #gotoChargeWapper
+{
+	width:500px;
+	height:300px;
+	margin:0 auto;
+}
+#gotoChargeWapper section:first-child
+{
+	margin:0 auto;
+	width:350px;
+	height:200px;
+}
+#gotoChargeWapper section:last-child
+{
+	text-align: center
+}
+#gotoChargeWapper figure
+{
+	float:left;
+	width:150px;
+}
+#gotoChargeWapper p
+{
+	width:200px;
+	float:right;
+	color:#999;
+}
+#gotoChargeWapper section a
+{
+	width:150px;
+	letter-spacing: 4px;
+}
+#gotoChargeWapper section a:first-child
+{
+	margin-right:100px;
+}
+
+/*page three*/
+#pagethree
+{
+	display: none;
+}
+#pagethree #chargeSuccessWapper
+{
+	width:540px;
+	height:360px;
+	margin:0 auto;
+}
+#chargeSuccessWapper section
+{
+	width:100%;
+	height:250px;
+}
+#chargeSuccessWapper section figure
+{
+	width:240px;
+	height: 240px;
+	float:left;
+}
+#chargeSuccessWapper section h6
+{
+	color:#999;
+	width:300px;
+	float:left;
+	margin-top:60px;
+}
+#chargeSuccessWapper section h6 u
+{
+	text-decoration: none;
+	color:#e84694;
+}
+#chargeSuccessWapper section p
+{
+	float:left;
+	width:300px;
+	margin:0;
+	color:#999;
+}
+#chargeSuccessWapper div
+{
+	width:100px;
+	margin:0 auto;
+}
+#chargeSuccessWapper div .btn
+{
+	letter-spacing: 6px;
+	width:100px;
+	border-bottom:2px solid #2980B9;
+}
+
+#footer {
+	
+	width:100%;
+	height:341px;
+	background-color:#00a0e9;
+	padding-top: 50px;
+	margin-top:100px;
+/*	position: relative;*/
+}
+
+#letsstart
+{
+	margin:0 auto;
+	padding-top:135px;
+	width:564px;
+	height:92px;
+}
+
+#websitemenu
+{
+	text-align: center;
+	width:990px;
+	margin:0 auto;
+	margin-top:90px;
+	margin-bottom:50px;
+	clear:both;
+}
+
+#websitemenu img
+{
+	margin-right:93px;
+}
+#websitemenu img:last-child
+{
+	margin-right: 0px;
+}
+
+#footer h2
+{
+	color:white;
+	text-align: center;
+	font-size:20px;
+	font-weight:200;
+	width:70%;
+	border-bottom:1px dashed #0087c5;
+	margin:0 auto;
+	padding-bottom:26px;
+}
+div#sociallogo
+{
+	width:160px;
+	height:61px;
+	margin: 0 auto;
+	margin-top: 27px;
+}
+
+div#sociallogo a:first-child
+{
+	margin-right:22px;
+}
+
+#copyrightCHN
+{
+	padding-top:30px;
+}
+#copyrightCHN,#copyrightEN,#beian
+{
+	width:100%;
+	clear:both;
+	color:white;
+	text-align: center;
+}
+
+/*tool tips*/
+#wxlogohover:hover .weixingTooltip
+{
+	display: block;
+}
+.weixingTooltip
+{
+	width:437px;
+	height:202px;
+	background-color: #fff;
+	border:1px solid #f2f2f2;
+	position: relative;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px rgba(100,100,100,.5);
+	margin-top: -290px;
+	margin-left: -100px;
+	display: none;
+}
+
+.weixingTooltip:after
+{
+	content:"";
+	display: inline-block;
+	background-color: white;
+	width:10px;
+	height: 10px;
+	border-right:1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: relative;
+	top: -15px;
+	left: 50%;
+
+}

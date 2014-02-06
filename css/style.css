@@ -1,0 +1,48 @@
+@charset "utf-8";
+/****************
+ * @description : Longmaster Ipeng
+ * @author   : é??å¿?å??  <zhigang.lu@longmaster.com>
+ * @date     : 2013-05-13
+ ****************/
+
+/*css reset*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body{ font-size:12px;font-family:'XinGothic-SinaWeibo','Microsoft Yahei','Simsun'; color:#333; line-height:150%; background: url(../images/webg.jpg); }
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul,ol{list-style:none}
+.clear{ clear:both;}
+a:visited, a:link {color: #06F; text-decoration: none; font-size:12px; line-height:150%;}
+a:hover {color:#F00; }
+
+/*header*/
+.h_top{ width:100%; height:260px; background:#fff;}
+.h_cont{ width:900px; margin:0 auto;  color:#d93e6e; font-size:42px; font-weight:400; line-height:86px;}
+.h_logo{ height:242px; background:url(../images/logo.png) no-repeat left 10px;position:}
+.h_span{ font-weight:500; font-size:60px; display:block; margin-left: 126px; padding-top:52px;}
+.h_span_2{ display:block; color:#474747; font-size:30px; font-weight:200; line-height:30px;}
+
+/*banner*/
+.bg_banner{ width:100%; height:417px;background:#000;}
+.banner_img_bg{ height:417px; width:100%;background:url(../images/banner_bg.jpg) no-repeat center center; }
+.b_banner{ width:900px; margin:0 auto; position:relative;}
+.iphone5{ background:url(../images/iphone5.png) no-repeat; width:304px; height:645px; position:absolute; left:600px; top:-220px;}
+
+.b_ico{ height:45px; background:url(../images/img.png) no-repeat left -120px;}
+.b_but01{ height:93px; background:url(../images/img.png) no-repeat left -170px;}
+.b_but01:hover{height:93px; background:url(../images/img.png) no-repeat -299px -170px; }
+.b_but02{ height:50px; background:url(../images/img.png) no-repeat left -280px; }
+.b_but02:hover{ height:50px; background:url(../images/img.png) no-repeat -299px -280px; }
+
+/*content*/
+.c_cont, .cont{ width:100%; height:420px;}
+.cont{width:900px; margin:0 auto; background:url(../images/instant_img.jpg) no-repeat 0 80px; }
+h1{ font-size:18px; font-weight:200; line-height:42px;}
+.c_left ,.c_cent ,.c_right{width:224px; height:auto;display:block; float:left;color:#757575; font-size:14px; line-height:24px;}
+.c_cent{ margin-left:108px;}
+.c_right{ margin-left:100px; font-size:22px; line-height:100px;}
+
+/*footer*/
+.footer{ width:100%; background:#efefef; height:150px;}
+.f_cont{ width:900px; margin:0 auto; line-height:150%; padding-top:50px; font-size:14px; color:#757575; text-align:center;}
+.f_style{ font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:150%;}
+

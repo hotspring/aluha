@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此页面是版本发布信息，保存必须使用UTF8格式保存-->
+<whatsnew>
+	<name>版本发布信息</name>
+	<Module>
+		<android>
+			<version>0.2.5</version>
+			<date>2012-06-31</date>
+			<url>http://127.0.0.1/ipeng/web/ipeng.langma.cn/download/phoneplus_adr_0.1.60.apk</url>
+			<size>2710592</size>
+		</android>
+		<ios>
+			<version>0.1.2</version>
+			<date>2013-07-15</date>
+			<url>https://itunes.apple.com/cn/app/id541319705?ls=1&amp;mt=8</url>
+			<size>55555</size>
+		</ios>
+	</Module>
+</whatsnew>
