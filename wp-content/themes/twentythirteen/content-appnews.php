@@ -31,10 +31,10 @@
 		</div><!-- .entry-summary -->
 		<?php else : ?>
 		<div class="entry-content">
-			<?php trt_excerpt('trt_excerptlength_index', 'trt_excerptmore'); ?> 
+			<?php trt_excerpt('trt_excerptlength_teaser', 'trt_excerptmore'); ?> 
 		</div><!-- .entry-content -->
 		<p class="app-entry-readmore">
-			<a class="read_mor" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>">继续阅读</a>
+			<a class="read_mor" href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>">-----继续阅读</a>
 		</p>
 		<?php endif; ?>
 
@@ -43,7 +43,7 @@
 	<section class="app-entry-right">
 		<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 		<div class="entry-thumbnail">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail("full"); ?>
 		</div>
 		<?php endif; ?>
 	</section>

@@ -28,59 +28,37 @@ get_header(); ?>
     	</div>
  <?php endif;?>
 	</header><!-- #masthead -->
+	<section id="breadcrumbs">
+		<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+	</section>
 	<div id="page" class="hfeed site">
 		
 
 		<div id="main" class="site-main">
-	<div id="primary" class="content-area appnewslist">
-		<div id="content" class="site-content" role="main">
+			<div id="primary" class="content-area appnewslist">
+				<div id="content" class="site-content" role="main">
 
-		<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content-appnews'); ?>
-			<?php endwhile; ?>
+					<?php /* The loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php get_template_part( 'content-appnews'); ?>
+					<?php endwhile; ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+					<?php twentythirteen_paging_nav(); ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+				<?php else : ?>
+					<?php get_template_part( 'content', 'none' ); ?>
+				<?php endif; ?>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
 
-<?php $args = array(
-	'show_option_all'    => '',
-	'orderby'            => 'name',
-	'order'              => 'ASC',
-	'style'              => 'list',
-	'show_count'         => 0,
-	'hide_empty'         => 1,
-	'use_desc_for_title' => 1,
-	'child_of'           => get_category_root_id(the_category_ID(false)),
-	'feed'               => '',
-	'feed_type'          => '',
-	'feed_image'         => '',
-	'exclude'            => '',
-	'exclude_tree'       => '',
-	'include'            => '',
-	'hierarchical'       => 1,
-	'title_li'           => '',
-	'show_option_none'   => '',
-	'number'             => null,
-	'echo'               => 1,
-	'depth'              => 0,
-	'current_category'   => 0,
-	'pad_counts'         => 0,
-	'taxonomy'           => 'category',
-	'walker'             => null
-); ?>
-<div id="secondary" class="appweibo" role="complementary">
-	<div style="width:100%;height:36px;border-bottom:5px solid #005a87;background-color:#009eec;margin-top:33px">
-		<h4 style="height:36px;line-height:36px;color:white;font-size:18px;text-indent:15px">微博</h4>
-	</div>
-	<iframe width="400" height="750" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=400&height=750&fansRow=2&ptype=1&speed=0&skin=9&isTitle=0&noborder=1&isWeibo=1&isFans=1&uid=1708559120&verifier=bd483efb&colors=cee1f4,e8e8e8,666666,0082cb,cee1f4&dpc=1"></iframe>
-</div><!-- #secondary -->
-<?php get_footer(); ?>
+
+		<div id="secondary" class="appweibo" role="complementary">
+			<div style="width:100%;height:36px;border-bottom:5px solid #005a87;background-color:#009eec;margin-top:33px">
+				<h4 style="height:36px;line-height:36px;color:white;font-size:18px;text-indent:15px">微博</h4>
+			</div>
+			<iframe width="400" height="750" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=400&height=750&fansRow=2&ptype=1&speed=0&skin=9&isTitle=0&noborder=1&isWeibo=1&isFans=1&uid=1708559120&verifier=bd483efb&colors=cee1f4,e8e8e8,666666,0082cb,cee1f4&dpc=1"></iframe>
+		</div><!-- #secondary -->
+	<?php get_footer(); ?>

@@ -110,6 +110,7 @@ body {
 	color: #141412;
 	line-height: 1.5;
 	margin: 0;
+	background-color: #f9f9f9;
 }
 
 a {
@@ -785,7 +786,7 @@ img.wp-smiley,
 	width:400px !important;
 }
 .site {
-	background-color: #fff;
+	/*background-color: #fff;*/
 	margin: 0 auto;
 	max-width: 1350px;
 	width: 100%;
@@ -1063,14 +1064,18 @@ list-style:none
 .sidebar .entry-summary,
 .sidebar .entry-meta {
 	max-width: 1040px;
-	padding: 0 0px 0 60px;
 }
 
 .app-entry-left
 {
 	float:left;
-	width:500px;
-	height:466px;
+	width:481px;
+	height:447px;
+	padding:28px 0px 0px 19px;
+}
+.app-entry-left h1 a
+{
+	font-size:32px;
 }
 .app-entry-right
 {
@@ -1087,10 +1092,21 @@ list-style:none
 {
 	padding:0px;
 	margin-top:33px;
+	background-color: white;
+	width:921px;
+	height:466px;
 }
 .app-entry-readmore
 {
-	text-align: right
+	text-align: right;
+}
+.app-entry-readmore a
+{
+	color:#a6a6a6;
+}
+.app-entry-readmore a:hover
+{
+	color: #e84694
 }
 /**
  * 5.1 Entry Header
