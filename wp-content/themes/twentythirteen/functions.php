@@ -534,3 +534,28 @@ function get_category_root_id($cat)
 	}	
 	return $this_category->term_id; // 返回根分类的id号
 }
+
+//Custom Excerpt Length
+function trt_excerptlength_teaser($length) {
+    return 163;
+}
+function trt_excerptlength_index($length) {
+    return 152;
+}
+function trt_excerptmore($more) {
+    return '...';
+}
+
+function trt_excerpt($length_callback='', $more_callback='') {
+    global $post;
+    if(function_exists($length_callback)){
+        add_filter('excerpt_length', $length_callback);
+    }
+    if(function_exists($more_callback)){
+        add_filter('excerpt_more', $more_callback);
+    }
+    $output = get_the_excerpt();
+    $output = apply_filters('wptexturize', $output);
+    $output = apply_filters('convert_chars', $output);
+    echo $output;
+}

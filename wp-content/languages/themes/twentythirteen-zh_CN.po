@@ -94,6 +94,7 @@ msgstr "评论已关闭。"
 #: content-aside.php:13 content-audio.php:24 content-gallery.php:24
 #: content-image.php:23 content-link.php:24 content-quote.php:13
 #: content-status.php:13 content-video.php:23 content.php:39
+#: content-appnews.php:35
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "继续阅读 <span class=\"meta-nav\">&rarr;</span>"
 

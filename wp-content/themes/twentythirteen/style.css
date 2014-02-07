@@ -767,10 +767,22 @@ img.wp-smiley,
 	width:80%;
 	float:left;
 }
+.full-primary
+{
+	width:100% !important;
+}
+.appnewslist
+{
+	width:921px !important;
+}
 #secondary
 {
 	width:20%;
 	float:right;
+}
+.appweibo
+{
+	width:400px !important;
 }
 .site {
 	background-color: #fff;
@@ -1054,7 +1066,32 @@ list-style:none
 	padding: 0 0px 0 60px;
 }
 
-
+.app-entry-left
+{
+	float:left;
+	width:500px;
+	height:466px;
+}
+.app-entry-right
+{
+	float:right;
+	width:420px;
+	height:466px;
+}
+.app-entry-right img
+{
+	width:420px;
+	height: 466px;
+}
+.app-posts
+{
+	padding:0px;
+	margin-top:33px;
+}
+.app-entry-readmore
+{
+	text-align: right
+}
 /**
  * 5.1 Entry Header
  * ----------------------------------------------------------------------------
@@ -1160,6 +1197,7 @@ list-style:none
 .sticky.format-gallery .entry-meta .date {
 	display: none;
 }
+
 
 
 /**

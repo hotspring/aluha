@@ -8293,3 +8293,7 @@ msgid "The site you were looking for, <strong>%s</strong>, does not exist."
 msgstr ""
 "您正在找的站点（<strong>%s</strong>）不存在。您可以用这个名字创建您自己的博"
 "客！"
+
+#: for the appnews
+msgid "Read More"
+msgstr "继续阅读"
