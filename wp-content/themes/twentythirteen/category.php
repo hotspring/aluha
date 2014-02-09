@@ -28,6 +28,9 @@ get_header(); ?>
     	</div>
  <?php endif;?>
 	</header><!-- #masthead -->
+	<section id="breadcrumbs">
+		<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+	</section>
 	<div id="page" class="hfeed site">
 		
 

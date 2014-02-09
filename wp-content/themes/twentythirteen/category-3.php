@@ -29,37 +29,37 @@ get_header(); ?>
  <?php endif;?>
 	</header><!-- #masthead -->
 	<section id="breadcrumbs">
-		
-			<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+		<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
 	</section>
+
 	<div id="page" class="hfeed site">
-		
+		<div id="main" class="site-main" style="margin-top:40px">
+			<a href="?cat=4" style="float:left;display:block;width:400px;height:360px;padding-top:40px;background-color:#f3f3f3;">
+				<p style="text-align:center;margin:0;">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/icon_starvision.png" alt="">
+				</p>
+				<h1 style="text-align:center">
+					公司简介
+				</h1>
+			</a>
 
-		<div id="main" class="site-main">
-			<div id="primary" class="content-area appnewslist">
-				<div id="content" class="site-content" role="main">
+			<a href="?cat=6" style="float:left;display:block;width:400px;height:360px;padding-top:40px;background-color:#f3f3f3;margin-left:75px">
+				<p style="text-align:center;margin:0;">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/icon_contact.png" alt="">
+				</p>
+				<h1 style="text-align:center">
+					联系方式
+				</h1>
+			</a>
 
-				<?php if ( have_posts() ) : ?>
-
-					<?php /* The loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'content-appnews'); ?>
-					<?php endwhile; ?>
-
-					<?php twentythirteen_paging_nav(); ?>
-
-				<?php else : ?>
-					<?php get_template_part( 'content', 'none' ); ?>
-				<?php endif; ?>
-
-				</div><!-- #content -->
-			</div><!-- #primary -->
+			<a href="?cat=5" style="float:right;display:block;width:400px;height:360px;padding-top:40px;background-color:#f3f3f3;">
+				<p style="text-align:center;margin:0;">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/icon_joinus.png" alt="">
+				</p>
+				<h1 style="text-align:center">
+					加入我们
+				</h1>
+			</a>
 
 
-		<div id="secondary" class="appweibo" role="complementary">
-			<div style="width:100%;height:36px;border-bottom:5px solid #005a87;background-color:#009eec;margin-top:33px">
-				<h4 style="height:36px;line-height:36px;color:white;font-size:18px;text-indent:15px">微博</h4>
-			</div>
-			<iframe width="400" height="750" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=400&height=750&fansRow=2&ptype=1&speed=0&skin=9&isTitle=0&noborder=1&isWeibo=1&isFans=1&uid=1708559120&verifier=bd483efb&colors=cee1f4,e8e8e8,666666,0082cb,cee1f4&dpc=1"></iframe>
-		</div><!-- #secondary -->
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

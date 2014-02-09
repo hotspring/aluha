@@ -37,8 +37,12 @@
       window.$ = jQuery;
       $(document).ready(function () {
         $('#parallaxWapper img').plaxify();
-        $('#parallaxWapper>div').plaxify()
-        $.plax.enable({ "activityTarget": $('#parallaxWapper')})
+        $('#parallaxWapper>div').plaxify();
+        $.plax.enable({ "activityTarget": $('#parallaxWapper')});
+        $(".qs").click(function(e){
+          $(this.hash).toggle('fast');
+          e.preventDefault();
+        });
       })
     </script>
 </body>
