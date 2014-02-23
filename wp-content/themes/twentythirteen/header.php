@@ -46,6 +46,7 @@
 			<div class="collapse navbar-collapse pull-right">
 				<ul class="nav navbar-nav">
 					<li><a href="/">首页</a></li> 
+					<li><a href="index.php?cat=9">Aluha GIRLS</a></li>
 					<li><a href="index.php?cat=2">产品动态</a></li>
 					<li><a href="index.php?cat=3">关于我们</a></li>
 					<li><a href="index.php?page_id=2">帮助中心</a></li> 

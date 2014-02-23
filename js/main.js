@@ -1,6 +1,8 @@
 var allNavLi;
 var totalHOffset;
+var myPlayer;
 $(document).ready(function(){
+	myPlayer = videojs('my_video_1');
 	var s = skrollr.init({
 		// forceHeight: false
 	});
@@ -44,7 +46,6 @@ $(document).ready(function(){
 	var wst = $(window).scrollTop();
 	testOffsetTop(wst);
 });
-var myPlayer;
 // videojs("my_video_1").ready(function(){
 //   myPlayer = this;
 

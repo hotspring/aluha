@@ -28,9 +28,9 @@
                 </div>
             </a>
           </div>
-          <p id="copyrightCHN">朗视科技传媒 Starvision 版权所有</p>
-          <p id="copyrightEN">Copyright © 2014 Starvision tech-media Co.Ltd All Rights Reserved.</p>
-          <p id="beian">网站备案：黔ICP备13004739号</p>
+          <p id="copyrightCHN">
+            <img src="img/copyright.png" alt="">
+          </p>
         </div>
 	
 <script type="text/javascript">

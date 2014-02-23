@@ -1,0 +1,8 @@
+/*only for ie 8*/
+#firstScreenWarpper
+{
+	/*background-image:url('../img/first_page_bg_ie8.png') !important;*/
+    /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/first_page_bg_ie8.png', sizingMethod='scale');*/
+	background-size: cover;
+    -ms-behavior: url(../js/vendor/backgroundsize.min.htc);
+}

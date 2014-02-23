@@ -10,24 +10,29 @@
  */
 
 get_header(); ?>
-<header id="masthead" class="site-header" role="banner">
+
 <?php 
 	$current_category = single_cat_title('', false);//获得当前分类目录名称
 	$categoryId = get_category_root_id(get_cat_ID($current_category));
  	if($categoryId == 2):?>
+ 	<header id="masthead" class="site-header" role="banner">
 		<div id="parallaxWapper">
     		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news1.png" alt="" data-xrange="20" data-yrange="20" id="new1"/>
     		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news2.png" alt="" data-xrange="40" data-yrange="40"  id="new2"/>
     		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news3.png" alt="" data-xrange="20" data-yrange="40" data-invert="true"  id="new3" />
     	</div>
- <?php elseif($categoryId == 3):?>
- 		<div id="parallaxWapper">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about1.png" alt="" data-xrange="20" data-yrange="20" id="about1" />
-				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about2.png" alt="" data-xrange="40" data-yrange="40" id="about2" />
-				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about3.png" alt="" data-xrange="20" data-yrange="20" id="about3" />
-    	</div>
- <?php endif;?>
 	</header><!-- #masthead -->
+ <?php elseif($categoryId == 3  ):?>
+	<header id="masthead" class="site-header aboutusBg" role="banner">
+ 		<div id="parallaxWapper">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about1.png" alt="" data-xrange="20" data-yrange="20" id="about1" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_diamond.png" alt="" data-xrange="20" data-yrange="20" id="about2" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_aluha.png" alt="" data-xrange="40" data-yrange="40" id="about3" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_phone.png" alt="" data-xrange="20" data-yrange="20" id="about4" />
+    	</div>
+    </header><!-- #masthead -->
+ <?php endif;?>
+
 	<section id="breadcrumbs">
 		<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
 	</section>

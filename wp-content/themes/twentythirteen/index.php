@@ -39,7 +39,11 @@ else
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link href="css/video-js.css" rel="stylesheet">
-        
+        <!--[if IE 8]>
+        <script src="js/vendor/pie.js"></script>
+        <link rel="stylesheet" href="css/ie8.css">
+        <![endif]-->
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -57,6 +61,7 @@ else
               <div class="navbar-collapse">
                   <ul class="nav navbar-nav">
                     <li><a href="/">首页</a></li> 
+                    <li><a href="index.php?cat=9">Aluha GIRLS</a></li>
                     <li><a href="index.php?cat=2">产品动态</a></li>
                     <li><a href="index.php?cat=3">关于我们</a></li>
                     <li><a href="index.php?page_id=2">帮助中心</a></li> 
@@ -92,111 +97,122 @@ else
             <img src="img/91zhushou.png" alt="">
           </a>
         </div>
+        
 
-        <div id="firstScreen">
-        	<div id="firstScreenBg" data-0="top:0px" data-500="top:-50px;">
-        		<!-- <div ></div> -->
-        	</div>
-        	<div id="slogan">
-            <div id="sloganWapper">
-              <div id="sloganFont">
-                <div id="homepagelogo"></div>
-                <div id="cheerupfont"></div>
-                <div id="sloganbig"></div>
+        <div id="firstScreenWarpper">
+          <div id="firstScreen">
+          	<div id="slogan">
+              <div id="sloganWapper">
+                <div id="sloganFont">
+                  <div id="homepagelogo"></div>
+                  <div id="cheerupfont"></div>
+                  <div id="sloganbig"></div>
+                </div>
+                <div id="appDownload">
+                  <a href=<?php echo $ios_url; ?>><img src="img/appstore.png" alt=""></a>
+                  <a id="androidDownloadBtn" href="#"><img src="img/googleplay.png" alt=""></a>
+                </div>
+                <div id="code">
+                  <img src="img/code.png" alt="">
+                </div>
+                <div class="sociallogo">
+                  <a href="http://weibo.com/lmipeng">
+                    <img src="img/weibo_icon.png" alt="">
+                  </a>
+                  <a id="wxlogohover" href="#">
+                    <img src="img/wechat_icon.png" alt="">
+                    <div class="weixingTooltip">
+                        <img src="img/weixintanchu.png" alt="">
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div id="appDownload">
-                <a href=<?php echo $ios_url; ?>><img src="img/appstore.png" alt=""></a>
-                <a id="androidDownloadBtn" href="#"><img src="img/googleplay.png" alt=""></a>
-              </div>
-              <div id="code">
-                <img src="img/code.png" alt="">
-              </div>
-              <div class="sociallogo">
-                <a href="http://weibo.com/lmipeng">
-                  <img src="img/weibo_icon.png" alt="">
-                </a>
-                <a id="wxlogohover" href="#">
-                  <img src="img/wechat_icon.png" alt="">
-                  <div class="weixingTooltip">
-                      <img src="img/weixintanchu.png" alt="">
-                  </div>
-                </a>
-              </div>
-            </div>
-        	</div>
-        	<div id="hand" data-0="top:120px" data-500="top:70px;">
-        		<div id="handWapper">
-                <div id="playVideoBtn">
-                  <img src="img/playVideo.png" alt="">
-                </div>    
-              </div>
-        	</div>
-        	<div id="scrollDownBlock" data-0="top:0px" data-500="top:-50px;">
-        		<div id="scrollDown">
+          	</div>
+          	<div id="hand" data-0="top:120px" data-500="top:70px;">
+          		<div id="handWapper">
+                  <div id="playVideoBtn">
+                    <img src="img/playVideo.png" alt="">
+                  </div>    
+                </div>
+          	</div>
+          </div>
+        	<div id="scrollDownBlock">
         			<img src="img/scrolldown.png" alt="">
-        		</div>
         	</div>
         </div>
         
-				<div id="secondScreen">
-					<div id="discoveryLayer" data-bottom="background-position:102px 400px;opacity:0" data-top="background-position:102px 44px;opacity:1"></div>
-					<div id="threeGirlsLayer" data-700-bottom="background-position:0px -597px" data-top="background-position:0px 325px" data--200-top="background-position:0px 325px" data--800-top="background-position:0px 775px"></div>
-					<div id="happymanLayer" data-300-bottom="background-position:0px 758px" data-top="background-position:0px 10px;" data--200-top="background-position:0px 10px" data--300-top="background-position:0px -300px"></div>
-				</div>
+        <div id="secondScreenWarpper">
+          <div id="secondScreen">
+            <div id="secondLeft">
+              <div id="discoveryLayer" data-bottom="background-position:102px 400px;opacity:0" data-top="background-position:102px 44px;opacity:1"></div>
+              <div id="threeGirlsLayer" data-700-bottom="background-position:0px -597px" data-top="background-position:0px 325px" data--200-top="background-position:0px 325px" data--800-top="background-position:0px 775px"></div>
+              <div id="happymanLayer" data-300-bottom="background-position:0px 758px" data-top="background-position:0px 10px;" data--200-top="background-position:0px 10px" data--300-top="background-position:0px -300px"></div>
+            </div>
+            <div id="secondRight">
+            </div>
+          </div>
+        </div>
        
-       	<div id="thirdScreen">
-       		<div id="meetLayer" data-600-bottom="top:-100px" data-172-top="top:72px;">
-            <div id="meetFont"></div>
-            
-          </div>
-          <div id="giftandmail">
-            <div id="meetGirls" data-600-bottom="top:-100px" data-172-top="top:72px;"></div>  
-
-          
-            <div id="boyhead"></div>
-            <div id="arrow1" data-400-bottom="top:188px;opacity:0;" data-400-top="top:188px;opacity:0;" data-287-top="top:208px;opacity:1;" data-top="top:208px;opacity:0;"></div>
-
-            <div id="arrow2" data-400-bottom="top:224px;opacity:0;" data-400-top="top:224px;opacity:0;" data-287-top="top:224px;opacity:1;" data-50-top="top:224px;opacity:0"></div>
-
-            <div id="arrow3" data-400-bottom="opacity:0;" data-400-top="opacity:1;" data-357-top="opacity:0;" ></div>
-
-            <div id="arrow4" data-400-bottom="opacity:0;" data-400-top="opacity:1;" data-387-top="opacity:0;" ></div>
-
-            <div id="arrow5" data-50-top="top:208px;opacity:0" data--100-top="top:208px;opacity:1" data--250-top="top:208px;opacity:0"></div>
-            <div id="arrow6" data-357-top="opacity:0;" data-250-top="opacity:1;" data-100-top="opacity:0;"></div>
-            <div id="arrow7" data-357-top="opacity:0;" data-300-top="opacity:1;" data-100-top="opacity:0;"></div>
-            <div id="arrow8" data-357-top="opacity:0;" data-300-top="opacity:1;" data-100-top="opacity:0;"></div>
-
-            <div class="giftFly" id="gf1" data-400-bottom="top:272px;left:388px;width:6px;height:5px;opacity:1;" data-400-top="top:260px;left:250px;width:64px;height:50px;opacity:1;" data-287-top="top:150px;left:140px;width:6px;height:5px;opacity:0;"></div>
-
-            <div class="giftFly" id="gf2" data-400-bottom="top:382px;left:388px;width:6px;height:5px;opacity:1;" data-400-top="top:260px;left:610px;width:64px;height:50px;opacity:1;" data-287-top="top:150px;left:740px;width:6px;height:5px;opacity:0;"></div>
-
-            <div class="giftFly" id="gf3" data-400-bottom="top:372px;left:488px;width:6px;height:5px;opacity:1;" data-400-top="top:412px;left:630px;width:64px;height:50px;opacity:1;" data-287-top="top:480px;left:800px;width:6px;height:5px;opacity:0;"></div>
-
-            <div class="giftFly" id="gf4" data-400-bottom="top:372px;left:450px;width:6px;height:5px;opacity:1;" data-400-top="top:520px;left:450px;width:64px;height:50px;opacity:1;" data-287-top="top:650px;left:500px;width:6px;height:5px;opacity:0;"></div>
+        <div id="thirdScreenWarpper">
+         	<div id="thirdScreen">
+         		<div id="meetLayer" data-600-bottom="top:-100px" data-172-top="top:72px;">
+              <div id="meetFont"></div>
+              
+            </div>
+            <div id="giftandmail">
+              <div id="meetGirls" data-600-bottom="top:-100px" data-172-top="top:0px;"></div>  
 
             
+              <div id="boyhead"></div>
+              <div id="arrow1" data-400-bottom="top:112px;opacity:0;" data-400-top="top:112px;opacity:0;" data-287-top="top:136px;opacity:1;" data-top="top:136px;opacity:0;"></div>
 
-            <div class="messageFly" id="mf1" data-287-top="top:150px;left:140px;width:20px;height:16px;opacity:0" data-150-top="top:240px;left:230px;width:58px;height:49px;opacity:1" data--50-top="top:272px;left:388px;width:58px;height:49px;opacity:0"></div>
+              <div id="arrow2" data-400-bottom="opacity:0;" data-400-top="opacity:0;" data-287-top="opacity:1;" data-50-top="opacity:0"></div>
 
-            <div class="messageFly" id="mf2" data-287-top="top:550px;left:40px;width:20px;height:16px;opacity:0" data-150-top="top:445px;left:230px;width:58px;height:49px;opacity:1" data--50-top="top:352px;left:388px;width:58px;height:49px;opacity:0"></div>
+              <div id="arrow3" data-400-bottom="opacity:0;" data-400-top="opacity:1;" data-357-top="opacity:0;" ></div>
 
-            <div class="messageFly" id="mf3" data-287-top="top:690px;left:520px;width:20px;height:16px;opacity:0" data-150-top="top:550px;left:470px;width:58px;height:49px;opacity:1" data--50-top="top:382px;left:448px;width:58px;height:49px;opacity:0"></div>
+              <div id="arrow4" data-400-bottom="opacity:0;" data-400-top="opacity:1;" data-387-top="opacity:0;" ></div>
 
-            <div class="messageFly" id="mf3" data-287-top="top:500px;left:840px;width:20px;height:16px;opacity:0" data-150-top="top:430px;left:610px;width:58px;height:49px;opacity:1" data--50-top="top:382px;left:468px;width:58px;height:49px;opacity:0"></div>
+              <div id="arrow5" data-50-top="opacity:0" data--100-top="opacity:1" data--250-top="opacity:0"></div>
+              <div id="arrow6" data-357-top="opacity:0;" data-250-top="opacity:1;" data-100-top="opacity:0;"></div>
+              <div id="arrow7" data-357-top="opacity:0;" data-300-top="opacity:1;" data-100-top="opacity:0;"></div>
+              <div id="arrow8" data-357-top="opacity:0;" data-300-top="opacity:1;" data-100-top="opacity:0;"></div>
 
-          </div>
-       	</div>
+              <div class="giftFly" id="gf1" data-400-bottom="top:200px;left:388px;width:6px;height:5px;opacity:1;" data-400-top="top:188px;left:250px;width:64px;height:50px;opacity:1;" data-287-top="top:78px;left:140px;width:6px;height:5px;opacity:0;"></div>
+
+              <div class="giftFly" id="gf2" data-400-bottom="top:310px;left:388px;width:6px;height:5px;opacity:1;" data-400-top="top:188px;left:610px;width:64px;height:50px;opacity:1;" data-287-top="top:78px;left:740px;width:6px;height:5px;opacity:0;"></div>
+
+              <div class="giftFly" id="gf3" data-400-bottom="top:300px;left:488px;width:6px;height:5px;opacity:1;" data-400-top="top:340px;left:630px;width:64px;height:50px;opacity:1;" data-287-top="top:408px;left:800px;width:6px;height:5px;opacity:0;"></div>
+
+              <div class="giftFly" id="gf4" data-400-bottom="top:300px;left:450px;width:6px;height:5px;opacity:1;" data-400-top="top:448px;left:450px;width:64px;height:50px;opacity:1;" data-287-top="top:578px;left:500px;width:6px;height:5px;opacity:0;"></div>
+
+              
+
+              <div class="messageFly" id="mf1" data-287-top="top:78px;left:140px;width:20px;height:16px;opacity:0" data-150-top="top:168px;left:230px;width:58px;height:49px;opacity:1" data--50-top="top:200px;left:388px;width:58px;height:49px;opacity:0"></div>
+
+              <div class="messageFly" id="mf2" data-287-top="top:478px;left:40px;width:20px;height:16px;opacity:0" data-150-top="top:373px;left:230px;width:58px;height:49px;opacity:1" data--50-top="top:280px;left:388px;width:58px;height:49px;opacity:0"></div>
+
+              <div class="messageFly" id="mf3" data-287-top="top:618px;left:520px;width:20px;height:16px;opacity:0" data-150-top="top:478px;left:470px;width:58px;height:49px;opacity:1" data--50-top="top:310px;left:448px;width:58px;height:49px;opacity:0"></div>
+
+              <div class="messageFly" id="mf3" data-287-top="top:428px;left:840px;width:20px;height:16px;opacity:0" data-150-top="top:358px;left:610px;width:58px;height:49px;opacity:1" data--50-top="top:310px;left:468px;width:58px;height:49px;opacity:0"></div>
+
+            </div>
+         	</div>
+        </div>
        	
-       	<div id="fourthScreen">
-       		<div id="interactiveGirls" data-top="background-position:40px 0px" data--800-top="background-position:40px 600px">
-       			<div id="outfitGirl" data-300-bottom="height:436px" data-101-top="height:0px"></div>
-       			<div id="xphone" data-300-bottom="background-position:0px 380px" data-51-top="background-position:0px 0px"></div>
-       		</div>
-       		<!-- <div id="interactiveFont">
-       				<img src="img/interactive_font.png" alt="">
-       		</div> -->
-       	</div>
+        <div id="fourthScreenWarpper">
+         	<div id="fourthScreen">
+            <div id="interactiveGirlsWarpper">
+           		<div id="interactiveGirls" data-top="background-position:right 0px" data--800-top="background-position:right 600px">
+           			<div id="outfitGirl" data-300-bottom="height:436px" data-101-top="height:0px"></div>
+           			<div id="xphone" data-300-bottom="background-position:0px 380px" data-51-top="background-position:0px 0px"></div>
+              </div>
+            </div>
+         		
+         		<div id="interactiveFont">
+         				<img src="img/interactive_font.png" alt="">
+         		</div>
+         	</div>
+        </div>
         <div id="fifthScreen"></div>
        	
        	<div id="footer">
@@ -204,17 +220,18 @@ else
            <img src="img/letsstart.png" alt=""> 
           </div>
           <div id="websitemenu">
-            <div class="siteFeature" id="feature1"></div>
-            <div class="siteFeature" id="feature2"></div>
-            <div class="siteFeature" id="feature3"></div>
+            <a class="siteFeature" href="index.php?cat=9" id="feature1"></a>
+            <a class="siteFeature" href="index.php?cat=2" id="feature2"></a>
+            <a class="siteFeature" href="index.php?cat=3" id="feature3"></a>
           </div>
           <h2>
             <img src="img/slogan_small.png" alt="">
           </h2>
           
-          <p id="copyrightCHN">朗视科技传媒 Starvision 版权所有</p>
-          <p id="copyrightEN">Copyright © 2014 Starvision tech-media Co.Ltd All Rights Reserved.</p>
-          <p id="beian">网站备案：黔ICP备13004739号</p>
+          <p id="copyrightCHN">
+            <img src="img/copyright.png" alt="">
+          </p>
+          
        	</div>
        
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
@@ -223,6 +240,10 @@ else
 
         <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
         <script type="text/javascript" src="js/vendor/skrollr.menu.min.js"></script>
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/vendor/skrollr.ie.min.js"></script>
+        <![endif]-->
         
         <script src="js/main.js"></script>
     </body>

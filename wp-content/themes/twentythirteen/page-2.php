@@ -13,6 +13,10 @@
 
 get_header(); ?> 		
 	<header id="masthead" class="site-header" role="banner">
+<?php
+	if(!strpos($_SERVER["HTTP_USER_AGENT"],"MSIE 8.0")):
+	
+?>
 		<div id="parallaxWapper">
     		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help1.png" alt="" data-xrange="20" data-yrange="20" id="help1" />
     		<div id="help2" data-xrange="20" data-yrange="20" data-invert="true">
@@ -25,7 +29,11 @@ get_header(); ?>
     			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help4.png" alt="" data-xrange="40" data-yrange="40" />
     		</div>
     	</div>
-
+<?php else : ?>
+		<div id="noplax">
+			<img src="images/helpbanner.jpg" alt="">
+		</div>
+<?php endif ?>
 	</header><!-- #masthead -->
 	<section id="breadcrumbs">
 		<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
@@ -120,7 +128,7 @@ get_header(); ?>
 				<h6>1.13 什么是金币?</h6>
 				<p>金币是啊噜哈中的一种虚拟货币，可用于赠送礼物给好友。</p>
 				<h6>1.14 如何获得金币？</h6>
-				<p>获得金币的方式有以下三种：</p>
+				<p>获得金币的方式有以下四种：</p>
 				<p>方式1：可免费领取5次金币，每天1次，每次100。</p>
 				<p>方式2：使用幸运星兑换金币</p>
 				<p>方式3：通过苹果商店充值购买；</p>
@@ -162,5 +170,8 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
+<!--[if lt IE 8]>
+        <script src="js/vendor/pie.js"></script>
+        
+        <![endif]-->
 <?php get_footer(); ?>

@@ -672,13 +672,13 @@ input[type="reset"]:active {
 img[class*="align"],
 img[class*="wp-image-"],
 img[class*="attachment-"] {
-	height: auto;
+	/*height: auto;*/
 }
 
 img.size-full,
 img.size-large,
 img.wp-post-image {
-	height: auto;
+	/*height: auto;*/
 	max-width: 100%;
 }
 

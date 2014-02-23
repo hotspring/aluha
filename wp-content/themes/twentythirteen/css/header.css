@@ -4,6 +4,12 @@
 	height:300px;
 	background-color: #00a0e9;
 }
+#noplax
+{
+	width:1350px;
+	height:100%;
+	margin:0 auto;
+}
 #parallaxWapper
 {
 	width:1350px;
@@ -12,6 +18,15 @@
 	background:url(../images/headers/demo_bg.jpg) no-repeat scroll;
 	overflow: hidden;
 	position: relative;
+}
+
+.aboutusBg
+{
+	background-color: #58cafe;
+}
+.aboutusBg #parallaxWapper
+{
+	background-image:url(../images/headers/aboutus_bg.jpg) !important;
 }
 
 #parallaxWapper img
@@ -36,20 +51,20 @@
 	top:0;
 }
 
-#about1
+#girls1
 {
 	top:42px;
 	left:32px;
 }
 
-#about2
+#girls2
 {
 	top:-20px;
 	left:756px;
 	z-index: 5;
 }
 
-#about3
+#girls3
 {
 	top:-20px;
 	left:706px;
@@ -65,7 +80,11 @@
 {
 	width:220px;
 	height:220px;
-	border-radius:50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	behavior: url(js/vendor/pie.htc);
 	background-color:#f7dde8;
 	position: absolute;
 	overflow: hidden;
@@ -82,7 +101,11 @@
 {
 	width:220px;
 	height:220px;
-	border-radius:50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	behavior: url(js/vendor/pie.htc);
 	background-color:white;
 	position: absolute;
 	overflow: hidden;
@@ -99,7 +122,11 @@
 {
 	width:220px;
 	height:220px;
-	border-radius:50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	behavior: url(js/vendor/pie.htc);
 	background-color:#d3ecfd;
 	position: absolute;
 	overflow: hidden;
@@ -111,4 +138,24 @@
 {
 	top:30px;
 	left:38px;
+}
+#about1
+{
+	top:42px;
+	left:32px;
+}
+#about2
+{
+	top:16px;
+	left:859px;
+}
+#about3
+{
+	top:54px;
+	left:836px;
+}
+#about4
+{
+	top:-40px;
+	left:700px;
 }
