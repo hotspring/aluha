@@ -16,9 +16,13 @@ get_header('girls'); ?>
 	$categoryId = get_category_root_id(get_cat_ID($current_category));
 ?>
  		<div id="parallaxWapper">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aluha_girls.png" alt="" data-xrange="20" data-yrange="20" id="girls1" />
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about2.png" alt="" data-xrange="40" data-yrange="40" id="girls2" />
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about3.png" alt="" data-xrange="20" data-yrange="20" id="girls3" />
+ 			<section id="parallaxLeft">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aluha_girls.png" alt="" data-xrange="20" data-yrange="20" id="girls1" />
+ 			</section>
+ 			<section id="parallaxRight">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about2.png" alt="" data-xrange="40" data-yrange="40" id="girls2" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about3.png" alt="" data-xrange="20" data-yrange="20" id="girls3" />
+ 			</section>
     	</div>
 	</header><!-- #masthead -->
 	<section id="breadcrumbs">

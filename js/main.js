@@ -37,9 +37,15 @@ $(document).ready(function(){
 
 	$('#androidDownloadBtn').click(function(e){
 		$("#androidDownloadBlock").toggle();
+		$("#androidDownloadBlock").css("left",$("#androidDownloadBtn").offset().left);
 		var h = $("#androidDownloadBlock").height();
 		var t = 446 - (h-92);
 		$("#androidDownloadBlock").css("top",t);
+		e.preventDefault();
+	});
+
+	$("#androidDownloadBlockCloseBtn").click(function(e){
+		$("#androidDownloadBlock").hide();
 		e.preventDefault();
 	});
 

@@ -158,27 +158,28 @@ nav
 	position: absolute;
 	z-index: 1200;
 	top: 446px;
-	left: 134px;
+	/*left: 134px;*/
 	padding: 5px;
 	display: none;
 	box-sizing:border-box;
 }
 #androidDownloadBlock:after
 {
-	width:15px;
-	height:15px;
-	background-color:#a7d9fc;
-	border:1px solid #fff;
+	width:21px;
+	height:11px;
+	background-image:url('../img/sanjiao.png');
 	content: "";
 	position: absolute;
-	bottom:-8px;
+	bottom:-11px;
 	left:50%;
-	border-left: none;
-	border-top: none;
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
+	
+}
+#androidDownloadBlockCloseBtn
+{
+	float: right;
+	clear:both;
+	cursor: pointer;
+
 }
 #androidDownloadBlock a
 {
@@ -437,7 +438,7 @@ nav
 	height:266px;
 	position:absolute;
 	top:184px;
-	left:118px;
+	left:20%;
 	background:url(../img/meet.png) no-repeat scroll;
 }
 
@@ -638,7 +639,14 @@ nav
 	position:absolute;
 	top:213px;
 	right:0px;
-
+	width: 40%;
+	text-align: center;
+}
+#interactiveFont img
+{
+	width:90%;
+	max-width: 576px;
+	height:auto;
 }
 
 #footer {

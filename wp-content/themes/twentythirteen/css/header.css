@@ -12,12 +12,31 @@
 }
 #parallaxWapper
 {
-	width:1350px;
+	max-width:1350px;
+	width:100%;
 	height:100%;
 	margin:0 auto;
 	background:url(../images/headers/demo_bg.jpg) no-repeat scroll;
 	overflow: hidden;
 	position: relative;
+}
+
+#parallaxLeft
+{
+	max-width:600px;
+	width: 40%;
+	position: relative;
+	height: 100%;
+	float: left;
+}
+
+#parallaxRight
+{
+	max-width: 750px;
+	width:60%;
+	position: relative;
+	height:100%;
+	float:right;
 }
 
 .aboutusBg
@@ -41,13 +60,13 @@
 }
 #new2
 {
-	left:760px;
+	left:10%;
 	top:0px;
 }
 
 #new3
 {
-	left:924px;
+	left:30%;
 	top:0;
 }
 
@@ -60,14 +79,14 @@
 #girls2
 {
 	top:-20px;
-	left:756px;
+	left:25%;
 	z-index: 5;
 }
 
 #girls3
 {
 	top:-20px;
-	left:706px;
+	left:20%;
 }
 
 #help1
@@ -88,7 +107,7 @@
 	background-color:#f7dde8;
 	position: absolute;
 	overflow: hidden;
-	left:641px;
+	left:5%;
 	top:48px;
 }
 #help2 img
@@ -109,7 +128,7 @@
 	background-color:white;
 	position: absolute;
 	overflow: hidden;
-	left:870px;
+	left:37%;
 	top:48px;
 }
 
@@ -130,7 +149,7 @@
 	background-color:#d3ecfd;
 	position: absolute;
 	overflow: hidden;
-	left:1098px;
+	left:68%;
 	top:48px;
 }
 
@@ -147,15 +166,15 @@
 #about2
 {
 	top:16px;
-	left:859px;
+	left:33%;
 }
 #about3
 {
 	top:54px;
-	left:836px;
+	left:30%;
 }
 #about4
 {
 	top:-40px;
-	left:700px;
+	left:10%;
 }

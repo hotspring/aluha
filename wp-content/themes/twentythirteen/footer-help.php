@@ -15,16 +15,16 @@
 	<div id="footer">
             
           <h2>
-            啊噜哈，分享欢乐时光
+            <img src="img/slogan_small.png" alt="">
           </h2>
           <div id="sociallogo">
-            <a href="http://weibo.com/lmipen">
+            <a href="http://weibo.com/lmipeng">
               <img src="wp-content/uploads/2014/01/weibo_icon.png" alt="">
             </a>
             <a id="wxlogohover" href="#">
                 <img src="wp-content/uploads/2014/01/wechat_icon.png" alt="">
                 <div class="weixingTooltip">
-                    <img src="wp-content/uploads/2014/01/weixintanchu.png" alt="">
+                    <img src="img/weixintanchu.png" alt="">
                 </div>
             </a>
           </div>

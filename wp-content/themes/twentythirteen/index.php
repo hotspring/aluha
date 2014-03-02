@@ -90,12 +90,16 @@ else
           </div>
         </div>
         <div id="androidDownloadBlock">
+          <div id="androidDownloadBlockCloseBtn">
+            <img src="img/closebtn.png" alt="">
+          </div>
           <a title="安卓市场" href="<?php echo $android_url; ?>">
             <img src="img/anzhuoshichang.png" alt="">
           </a>
           <a title="91助手" href="#">
             <img src="img/91zhushou.png" alt="">
           </a>
+          
         </div>
         
 

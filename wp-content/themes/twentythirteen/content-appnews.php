@@ -7,7 +7,11 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
-
+<?php 
+$custom = get_post_custom(); 
+$custom = get_post_meta($custom["_thumbnail_id"][0], 
+'_wp_attached_file',true); 
+?> 
 <article id="post-<?php the_ID(); ?>" <?php post_class('app-posts'); ?>>
 	<section class="app-entry-left">
 		<header class="entry-header">
@@ -43,7 +47,7 @@
 	<section class="app-entry-right">
 		<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 		<div class="entry-thumbnail">
-			<?php the_post_thumbnail("full"); ?>
+			<img src="<?php $uploads = wp_upload_dir(); echo $uploads['baseurl'] . '/' . $custom ?>"/>
 		</div>
 		<?php endif; ?>
 	</section>

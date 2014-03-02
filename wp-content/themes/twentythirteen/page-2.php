@@ -18,16 +18,22 @@ get_header(); ?>
 	
 ?>
 		<div id="parallaxWapper">
-    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help1.png" alt="" data-xrange="20" data-yrange="20" id="help1" />
-    		<div id="help2" data-xrange="20" data-yrange="20" data-invert="true">
-    			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help2.png" alt="" data-xrange="40" data-yrange="40" />
-    		</div>
-    		<div id="help3" data-xrange="20" data-yrange="20" data-invert="true">
-    			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help3.png" alt="" data-xrange="40" data-yrange="40" />
-    		</div>
-    		<div id="help4" data-xrange="20" data-yrange="20" data-invert="true">
-    			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help4.png" alt="" data-xrange="40" data-yrange="40" />
-    		</div>
+			<section id="parallaxLeft">
+	    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help1.png" alt="" data-xrange="20" data-yrange="20" id="help1" />
+				
+			</section>
+			<section id="parallaxRight">
+				
+	    		<div id="help2" data-xrange="20" data-yrange="20" data-invert="true">
+	    			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help2.png" alt="" data-xrange="40" data-yrange="40" />
+	    		</div>
+	    		<div id="help3" data-xrange="20" data-yrange="20" data-invert="true">
+	    			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help3.png" alt="" data-xrange="40" data-yrange="40" />
+	    		</div>
+	    		<div id="help4" data-xrange="20" data-yrange="20" data-invert="true">
+	    			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/help4.png" alt="" data-xrange="40" data-yrange="40" />
+	    		</div>
+			</section>
     	</div>
 <?php else : ?>
 		<div id="noplax">
