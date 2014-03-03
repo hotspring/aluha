@@ -25,10 +25,15 @@ get_header(); ?>
  <?php elseif($categoryId == 3  ):?>
 	<header id="masthead" class="site-header aboutusBg" role="banner">
  		<div id="parallaxWapper">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about1.png" alt="" data-xrange="20" data-yrange="20" id="about1" />
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_diamond.png" alt="" data-xrange="20" data-yrange="20" id="about2" />
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_aluha.png" alt="" data-xrange="40" data-yrange="40" id="about3" />
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_phone.png" alt="" data-xrange="20" data-yrange="20" id="about4" />
+ 			<section id="parallaxLeft">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about1.png" alt="" data-xrange="20" data-yrange="20" id="about1" />
+			</section>
+			<section id="parallaxRight">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_diamond.png" alt="" data-xrange="20" data-yrange="20" id="about2" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_aluha.png" alt="" data-xrange="40" data-yrange="40" id="about3" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aboutus_phone.png" alt="" data-xrange="20" data-yrange="20" id="about4" />
+				
+			</section>
     	</div>
     </header><!-- #masthead -->
  <?php endif;?>

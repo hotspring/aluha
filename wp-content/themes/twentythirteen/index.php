@@ -19,6 +19,9 @@ if ($dlInfo['android']['url'] == "#")
     $android_url = '';
 else
     $android_url = ' "dl_info.php?product_type=1"';
+
+$post_ids = get_post(667);
+$contents = $post_ids->post_content;
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -83,25 +86,12 @@ else
         <div id="videoPopup">
           <div id="videoWarp">
             <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" width="800" height="451" data-setup="{}">
-            <source src="http://mgcfilm.qiniudn.com/aluhasuxia.mp4?avthumb/mp4/ab/1600k/r/24/vcodec/libx264" type='video/mp4'>
+            <source src="<?php echo $contents?>" type='video/mp4'>
               <!-- http://mgcfilm.qiniudn.com/aluhasuxia.mp4?avthumb/mp4/ab/1600k/r/24/vcodec/libx264 -->
               <!-- http://mgcfilm.qiniudn.com/aluhasuxia.mp4?avthumb/ipad_high -->
           </video>
           </div>
-        </div>
-        <div id="androidDownloadBlock">
-          <div id="androidDownloadBlockCloseBtn">
-            <img src="img/closebtn.png" alt="">
-          </div>
-          <a title="安卓市场" href="<?php echo $android_url; ?>">
-            <img src="img/anzhuoshichang.png" alt="">
-          </a>
-          <a title="91助手" href="#">
-            <img src="img/91zhushou.png" alt="">
-          </a>
-          
-        </div>
-        
+        </div>      
 
         <div id="firstScreenWarpper">
           <div id="firstScreen">
@@ -113,8 +103,22 @@ else
                   <div id="sloganbig"></div>
                 </div>
                 <div id="appDownload">
-                  <a href=<?php echo $ios_url; ?>><img src="img/appstore.png" alt=""></a>
-                  <a id="androidDownloadBtn" href="#"><img src="img/googleplay.png" alt=""></a>
+                  <a class="storeBtn" href=<?php echo $ios_url; ?>><img src="img/appstore.png" alt=""></a>
+                  <div class="storeBtn" id="androidDownloadBtn" href="#">
+                    <img src="img/googleplay.png" alt="">
+                    <div id="androidDownloadBlock">
+                      <a title="安卓市场" href="<?php echo $android_url; ?>">
+                        <img src="img/anzhuoshichang.png" alt="">
+                      </a>
+                      <a href="http://apk.91.com/soft/Controller.ashx?Action=Download&id=40322909&m=a8f890289db137eb01b0e6cfbbabc2b8&p=Android&f_name=%u554a%u565c%u54c8&f_version=5&f_id=40322909&f_identifier=cn.Longmaster.iPeng.Activity&ext=apk&secure=SAFE&fitto=2.2,2.3,2.3.3%E6%88%96%E8%80%852.3.4,3.0,3.1,3.2,4.0,4.0.3,4.1,4.2,4.3
+"  name="啊噜哈" onclick="return Key.Open(this, 'android');" SoftIcon="" title="通过91助手下载" >
+                        <img src="img/91zhushou.png" alt="">
+                      </a>
+                      <a title="使用360手机助手安装" href="zhushou360://type=apk&name=%E5%95%8A%E5%99%9C%E5%93%88&icon=http://aluha.cn/images/Aluha72x72.png&url=http://aluha.langma.cn/dl_info.php?product_type=1">
+                        <img alt="使用360手机助手安装" src="img/360zhushou.png">
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div id="code">
                   <img src="img/code.png" alt="">
@@ -235,8 +239,10 @@ else
           <p id="copyrightCHN">
             <img src="img/copyright.png" alt="">
           </p>
-          
+
        	</div>
+
+
        
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/plugins.js"></script>
@@ -244,7 +250,8 @@ else
 
         <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
         <script type="text/javascript" src="js/vendor/skrollr.menu.min.js"></script>
-
+        <script src="http://zs.91.com/script/api/key121121.js"></script>
+        <script src="http://zhushou.360.cn/script/360mobilemgrdownload.js"></script>
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/vendor/skrollr.ie.min.js"></script>
         <![endif]-->

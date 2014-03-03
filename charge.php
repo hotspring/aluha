@@ -48,12 +48,12 @@
         </nav>
         
         <div id="container">
-        	<div class="row" id="pageTitle">
+        	<div  id="pageTitle">
         		<H1>充值中心</H1>
         	</div>
         	
         	
-            <div id="pageone" class="row">
+            <div id="pageone">
             	<h1 style="text-align:center">coming soon</h1>
             </div>
 
