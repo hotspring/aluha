@@ -40,6 +40,7 @@ $contents = $post_ids->post_content;
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link href="css/video-js.css" rel="stylesheet">
         <!--[if IE 8]>

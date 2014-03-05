@@ -9,15 +9,16 @@
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>Aluha啊噜哈</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=640, initial-scale=0.5, user-scalable=no">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <!-- Loading Flat UI -->
         <link href="css/flat-ui.css" rel="stylesheet">
         <link rel="stylesheet" href="css/charge.css">
-
+        <link rel="stylesheet" href="wp-content/themes/twentythirteen/css/responsed.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
           <script src="js/html5shiv.js"></script>
@@ -25,25 +26,30 @@
         
     </head>
     <body>
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default" >
             <!-- Brand and toggle get grouped for better mobile display -->
             <div id="navbar-wapper">
-							<div class="navbar-header">
-									<a class="navbar-brand" href="/">
-											<img src="img/aluha_logo.png" alt="">
-									</a>
-							</div>
-		 
-							<div class="collapse navbar-collapse pull-right">
-									<ul class="nav navbar-nav">
-										<li><a href="/">首页</a></li> 
-                                        <li><a href="index.php?cat=9">Aluha Girls</a></li>
-										<li><a href="index.php?cat=2">产品动态</a></li>
-                                        <li><a href="index.php?cat=3">关于我们</a></li>
-                                        <li><a href="index.php?page_id=2">帮助中心</a></li> 
-                                        <li><a href="charge.php">充值中心</a></li>          
-									</ul>    
-							</div>
+                <div class="nav-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">
+							<img src="img/aluha_logo.png" alt="">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse pull-right">
+					<ul class="nav navbar-nav">
+						<li><a href="/">首页</a></li> 
+                        <li><a href="index.php?cat=9">Aluha Girls</a></li>
+						<li><a href="index.php?cat=2">产品动态</a></li>
+                        <li><a href="index.php?cat=3">关于我们</a></li>
+                        <li><a href="index.php?page_id=2">帮助中心</a></li> 
+                        <li><a href="charge.php">充值中心</a></li>          
+					</ul>    
+				</div>
             </div>
         </nav>
         
@@ -141,5 +147,13 @@
         <script src="js/plugins.js"></script>
         
         <script src="js/charge.js"></script>
+        <script type="text/javascript">
+          window.$ = jQuery;
+          $(document).ready(function () {
+            $("div.nav-btn").click(function(e){
+              $(".navbar-collapse").toggle("fast");
+            })
+          })
+        </script>
     </body>
 </html>

@@ -49,6 +49,9 @@
           itemSelector: '.girlsArticle',
           gutter:20
         });
+        $("div.nav-btn").click(function(e){
+          $(".navbar-collapse").toggle("fast");
+        })
       })
     </script>
 </body>

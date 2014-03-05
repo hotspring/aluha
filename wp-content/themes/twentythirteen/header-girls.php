@@ -19,8 +19,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
+	<meta charset="<?php bloginfo( 'charset' ); ?>"><meta name="viewport" content="width=640,initial-scale=0.5,user-scalable=0">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -30,6 +29,7 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 	<link rel='stylesheet' type='text/css' media='all' href="<?php echo get_template_directory_uri(); ?>/css/header.css"/>
+	<link rel='stylesheet' type='text/css' media='all' href="<?php echo get_template_directory_uri(); ?>/css/responsed.css"/>
 	<link rel='stylesheet' type='text/css' media='all' href="<?php echo get_template_directory_uri(); ?>/css/girls.css"/>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plax.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.infinitescroll.min.js"></script>
@@ -93,6 +93,11 @@
 <body <?php body_class(); ?>>
 	<nav class="navbar" >
         <div id="navbar-wapper">
+        	<div class="nav-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<div class="navbar-header">
 				<a class="navbar-brand" href="/">
 					<img src="wp-content/uploads/2014/01/aluha_logo.png" alt="">

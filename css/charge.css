@@ -18,13 +18,18 @@
 	line-height:44px;
 }
 
+.navbar-brand img
+{
+	width:108px;
+}
+
 a {
 	
 }
 
 #container {
 	max-width:1350px;
-	min-width:900px;
+	/*min-width:900px;*/
 	width: 100%;
 	margin:0 auto;
 	
@@ -430,4 +435,18 @@ div#sociallogo a:first-child
 	top: -15px;
 	left: 50%;
 
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px)
+{
+
+	.navbar .nav
+	{
+		display:block;
+		float:none;
+	}
+	.navbar-collapse
+	{
+		max-height: 1000px;
+	}
 }

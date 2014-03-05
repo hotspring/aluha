@@ -78,4 +78,6 @@
 			isRTL: body.is( '.rtl' )
 		} );
 	}
+
+	
 } )( jQuery );

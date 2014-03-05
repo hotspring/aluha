@@ -14,9 +14,15 @@ get_header(); ?>
  	if($categoryId == 2):?>
  	<header id="masthead" class="site-header" role="banner">
 		<div id="parallaxWapper">
-    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news1.png" alt="" data-xrange="20" data-yrange="20" id="new1"/>
-    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news2.png" alt="" data-xrange="40" data-yrange="40"  id="new2"/>
-    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news3.png" alt="" data-xrange="20" data-yrange="40" data-invert="true"  id="new3" />
+			<section id="parallaxLeft">
+				
+	    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news1.png" alt="" data-xrange="20" data-yrange="20" id="new1"/>
+			</section>
+			<section id="parallaxRight">
+	    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news2.png" alt="" data-xrange="40" data-yrange="40"  id="new2"/>
+	    		<img src="<?php echo get_template_directory_uri(); ?>/images/headers/news3.png" alt="" data-xrange="20" data-yrange="40" data-invert="true"  id="new3" />
+				
+			</section>
     	</div>
     </header><!-- #masthead -->
  <?php elseif($categoryId == 3):?>
@@ -36,9 +42,15 @@ get_header(); ?>
  <?php elseif($categoryId == 9):?>
  	<header id="masthead" class="site-header" role="banner">
  		<div id="parallaxWapper">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aluha_girls.png" alt="" data-xrange="20" data-yrange="20" id="girls1" />
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about2.png" alt="" data-xrange="40" data-yrange="40" id="girls2" />
-			<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about3.png" alt="" data-xrange="20" data-yrange="20" id="girls3" />
+ 			<section id="parallaxLeft">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/aluha_girls.png" alt="" data-xrange="20" data-yrange="20" id="girls1" />
+ 				
+ 			</section>
+ 			<section id="parallaxRight">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about2.png" alt="" data-xrange="40" data-yrange="40" id="girls2" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/headers/about3.png" alt="" data-xrange="20" data-yrange="20" id="girls3" />
+ 				
+ 			</section>
     	</div>
     </header><!-- #masthead -->
  <?php endif;?>

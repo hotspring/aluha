@@ -43,6 +43,9 @@
           $(this.hash).toggle('fast');
           e.preventDefault();
         });
+        $("div.nav-btn").click(function(e){
+          $(".navbar-collapse").toggle("fast");
+        })
       })
     </script>
 </body>

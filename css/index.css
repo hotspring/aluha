@@ -27,6 +27,10 @@ nav
 	height: 44px;
 	line-height:44px;
 }
+.navbar-brand img
+{
+	width:104px;
+}
 
 .navbar-collapse
 {
