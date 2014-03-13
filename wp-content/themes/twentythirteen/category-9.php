@@ -28,7 +28,7 @@ get_header('girls'); ?>
 	<section id="breadcrumbs">
 		<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
 	</section>
-	<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site girls">
 		<div id="main" class="site-main ">
 		<?php if ( have_posts() ) : ?>
 

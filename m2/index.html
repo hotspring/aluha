@@ -8,18 +8,12 @@
   <meta content="telephone=no" name="format-detection" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel='stylesheet' type='text/css' media='all' href="/css/responsed.css"/>
   <script src="../js/vendor/jquery-1.10.2.min.js"></script>
   <title>Aluha : 啊噜哈，分享欢乐时光</title>
 </head>
 <body>
   <nav>
     <div id="navbar-wapper">
-      <div class="nav-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
       <div class="navbar-header">
           <a class="navbar-brand" href="/m/">
               <img src="img/aluha_logo.png" alt="">
@@ -28,32 +22,26 @@
 
       <div class="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../?cat=9">Aluha GIRLS</a></li>
-            <li><a href="../?cat=2">产品动态</a></li>
-            <li><a href="../?cat=3">关于我们</a></li>
-            <li><a href="../?page_id=2">帮助中心</a></li> 
-            <li><a href="../charge.php">充值中心</a></li>      
+            <li><a href="../?cat=9">Aluha GIRLS</a></li> 
           </ul>    
       </div>
     </div>
   </nav>
-  <div id="firstscreen">
+  
+  <div style="width:100%">
     <a href="../dl_info.php">
-      <img src="img/download.png" alt="" />
+      <img width="100%" src="img/1stscreen.png" alt="" />
     </a>
+    <img width="100%" src="img/secondscreen.png" alt="" />
+    <img width="100%" src="img/thirdscreen.png" alt="" />
+    <img width="100%" src="img/fourthscreen.png" alt="" />
+    <img width="100%" src="img/footer.png" alt="" />
   </div>
-  <div id="secondscreen"></div>
+  <!-- <div id="secondscreen"></div>
   <div id="thirdscreen"></div>
   <div id="fourthscreen"></div>
-  <footer></footer>
+  <footer></footer> -->
 
-  <script type="text/javascript">
-      window.$ = jQuery;
-      $(document).ready(function () {
-        $("div.nav-btn").click(function(e){
-          $(".navbar-collapse").toggle("fast");
-        })
-      })
-    </script>
+  
 </body>
 </html>

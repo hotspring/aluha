@@ -93,11 +93,17 @@
 <body <?php body_class(); ?>>
 	<nav class="navbar" >
         <div id="navbar-wapper">
+        	<?php
+        		$userAgent = $_SERVER['HTTP_USER_AGENT'];
+        	 	// echo strpos($userAgent, "Android");
+        	 ?>
+        	<?php if (strpos($userAgent, "Android") == false) {?>
         	<div class="nav-btn">
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
+			<?php } ?>
 			<div class="navbar-header">
 				<a class="navbar-brand" href="/">
 					<img src="wp-content/uploads/2014/01/aluha_logo.png" alt="">

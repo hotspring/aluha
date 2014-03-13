@@ -8,6 +8,7 @@ nav
 	width:100%;
 	background-color:#005b85;
 	border-bottom:5px solid #005074;
+	height: 80px;
 }
 
 #navbar-wapper {
@@ -16,10 +17,10 @@ nav
 	margin:0 auto;
 }
 .navbar-header{
-	float:none;
 	width:150px;
 	height:80px;
-	margin: 0 auto;
+	margin-left: 20px;
+	float:left;
 }
 
 
@@ -36,36 +37,37 @@ nav
 
 .navbar-collapse
 {
-	/*float:right;*/
-	background-color: #a7d9fc;
-	display: none;
+	float: right;
+
 }
 
 .navbar-collapse ul
 {
 	margin:0;
+	margin-right:20px;
 	padding: 0;
 	list-style: none;
+
 }
 
 .navbar-collapse ul li
 {
-	border-top:1px solid #005072;
-	display: block;
+	display: inline-block;
+	line-height: 120px;
+	height:80px;
 }
 
 .navbar-collapse ul li a
 {
-	color: #0082bd;
-	display: block;
-	width:90%;
+	color: #a6d9fb;
+	/*display: block;*/
+	width:260px;
 	font-weight: 400;
-	font-size:24px;
-	height:80px;
+	font-size:2em;
+	height:120px;
 	line-height: 80px;
-	padding: 0px 5px;
+	/*padding: 0px 5px;*/
 	text-shadow: none;
-	margin:0 auto;
 }
 
 
@@ -100,17 +102,12 @@ nav
 {
 	width:100%;
 	height: 362px;
-	background: url(../img/1stscreen.png) no-repeat scroll;
+	/*background: url(../img/1stscreen.png) no-repeat scroll;*/
 	background-size:100% 100%;
 	position: relative;
 }
 
-#firstscreen a
-{
-	position: absolute;
-	top:187px;
-	left:58px;
-}
+
 
 #secondscreen
 {

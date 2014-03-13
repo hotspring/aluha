@@ -92,4 +92,9 @@
 		background-color: #a7d9fc;
 
 	}
+	/*for aluha girls make it two column*/
+	.girls
+	{
+		width:520px !important;
+	}
 }
